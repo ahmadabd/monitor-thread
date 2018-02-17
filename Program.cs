@@ -21,8 +21,13 @@ namespace getProcessMyPc
             {
                 threads[i].Join();
             }
-            Console.WriteLine(syncObj.count());
 
+            // for(int i = 0; i < 1000; i++){
+            //     ThreadPool.QueueUserWorkItem(syncObj.add, 12);
+            // }
+            
+            Console.WriteLine(syncObj.count());
+            
             Console.ReadKey();
         }
     }
